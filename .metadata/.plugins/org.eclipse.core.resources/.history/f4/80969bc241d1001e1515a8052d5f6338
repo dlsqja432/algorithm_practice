@@ -1,0 +1,16 @@
+package org.kh.app2;
+
+public class Loop4 {
+
+	public static void main(String[] args) {
+
+		int i=0; 
+		int total = 0;
+		while(i<=10) {
+			i++;
+			total += i;
+		}
+		System.out.println(total);
+	}
+
+}

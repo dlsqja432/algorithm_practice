@@ -1,0 +1,8 @@
+package basic_code_tip;
+// 백준 2309번 : 일곱 난쟁이
+public class Ex08 {
+
+	public static void main(String[] args) {
+
+	}
+}

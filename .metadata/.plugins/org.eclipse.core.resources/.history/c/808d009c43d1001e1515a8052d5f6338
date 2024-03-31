@@ -1,0 +1,27 @@
+package org.kh.app2;
+
+public class Loop4 {
+
+	public static void main(String[] args) {
+
+		/*
+		 * for와 마찬가지로 조건이 만족하는 동안만 반복 수행
+		 * 그러나 while의 괄호에 조건만 기입하고, 해당 블록 안에 증감식이 기재됨.
+		 * 
+		 * 초기식
+		 * while(조건식) {
+		 * 		증감식;
+		 * 		반복할 문장;
+		 * }
+		 */
+		
+		int i=0; 
+		int total = 0;
+		while(i<5) {
+			i++;
+			total += i;
+		}
+		System.out.println("결과 : " + total);
+	}
+
+}

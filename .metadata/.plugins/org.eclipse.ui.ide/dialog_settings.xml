@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\coding\java2\algorithmtest"/>
+			<item value="C:\coding\java2\test13"/>
+			<item value="C:\coding\java2\test12"/>
+			<item value="C:\coding\java2\test11"/>
+			<item value="C:\coding\java2\test09"/>
+			<item value="C:\coding\java2\test08"/>
+			<item value="C:\coding\java2\test07"/>
+			<item value="C:\coding\java2\test06"/>
+			<item value="C:\coding\java2\test05"/>
+			<item value="C:\coding\java2\test04"/>
+			<item value="C:\coding\java2\test03"/>
+			<item value="C:\coding\java2\test02"/>
+			<item value="C:\coding\java2\test01"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,14 @@
+package org.kh.app2;
+// do~while
+public class Loop5 {
+
+	public static void main(String[] args) {
+
+		int a = 0;
+		while(a>10) {
+			a++;
+			System.out.println(a);
+		}
+	}
+
+}

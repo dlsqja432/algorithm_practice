@@ -1,0 +1,31 @@
+package datastructureex;
+
+import java.util.Scanner;
+
+public class AlgoExam {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] arr1 = {1, 52, 48};
+		int[] arr1 = {50, 42};
+		int[] arr1 = {4, 13, 63, 87};
+		System.out.println(func2(n));
+	}
+	
+	public static int func1(int n) {
+		int rs = 0;
+		for(int i=1; i<=n; i++) {
+			if(i%3==0 || i%5==0) {
+				rs += i;
+			}
+		}
+		return rs;
+	}
+	
+	public static int func2(int arr[],int n) {
+		
+		return 0;
+	}
+}
+

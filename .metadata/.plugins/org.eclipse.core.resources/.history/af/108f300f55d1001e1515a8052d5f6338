@@ -1,0 +1,39 @@
+package deep1;
+
+import java.util.Scanner;
+
+public class Ex2 {
+	
+	final static int KING = 1;
+	final static int QUEEN = 1;
+	final static int LOOK = 2;
+	final static int VISHOP = 2;
+	final static int KNIGHT = 2;
+	final static int PHON = 8;
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int king = scan.nextInt();
+		int queen = scan.nextInt();
+		int look = scan.nextInt();
+		int vishop = scan.nextInt();
+		int knight = scan.nextInt();
+		int phon = scan.nextInt();
+		
+		if(king != KING) System.out.println(KING - king);
+		else System.out.println(king);
+		
+		if(queen != QUEEN) System.out.println(QUEEN - queen);
+		else System.out.println(queen);
+		
+		if(look != LOOK) System.out.println(LOOK - look);
+		else System.out.println(look);
+		
+		if(knight != KNIGHT) System.out.println(KNIGHT - knight);
+		else System.out.println(knight);
+		
+		if()
+	}
+
+}

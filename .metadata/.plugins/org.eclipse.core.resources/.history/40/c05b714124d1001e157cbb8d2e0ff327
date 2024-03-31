@@ -1,0 +1,27 @@
+package org.kh.app2;
+// 반복문 : for, while, do~while~
+public class Loop1 {
+
+	public static void main(String[] args) {
+
+		int n = 0;
+		
+		// 조건식이 참 일 때 동안만 반복수행한다.
+		// for(초기식; 조건식; 증감식) { 반복해야할 문장 }
+		for(int i=0; i<100; i++) {
+			n += 1;
+		}
+		
+		System.out.println("n = " + n);
+		
+		// 배열
+		int[] nums = {80, 95, 75, 60, 100, 65, 70, 90, 85, 95};
+		String[] names = {"김", "이", "박", "최", "정", "오", "배", "강", "장", "계"};
+		
+		for(int i=0; i<10; i++) {
+			System.out.print("이름 : " + names[i]);
+			System.out.println(" 점수 : " + nums[i]);
+		}
+	}
+
+}

@@ -1,0 +1,43 @@
+package array;
+
+import java.util.Scanner;
+
+public class Ex9 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		int n = scan.nextInt();
+		int m = scan.nextInt();
+		int[] arr = new int[n];
+		
+		for(int i=0; i<n; i++) {
+			arr[i] = i+1;
+		}
+		
+		for(int i=0; i<m; i++) {
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			
+			for(int j=a; j<b; j++) {
+				if(a==b) break;
+				int tmp = arr[b-1];
+				arr[b-1] = arr[b-2];
+				arr[b-2] = tmp;
+				System.out.print(arr[0]);
+				System.out.print(arr[1]);
+				System.out.print(arr[2]);
+				System.out.print(arr[3]);
+				System.out.print(arr[4]);
+			}
+		}
+		
+		for(int i=0; i<n; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+}
+
+ 

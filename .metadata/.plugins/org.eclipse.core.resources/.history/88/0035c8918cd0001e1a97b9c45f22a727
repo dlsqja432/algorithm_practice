@@ -1,0 +1,42 @@
+package org.kh.app;
+
+import java.util.Scanner;
+
+// 조건문 다단계 if
+public class Condition4 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("점수 입력[0-100] : ");
+		int point = scan.nextInt();
+		String result;
+		/*
+		 * 학점(result)은 점수(point)가 
+		 * 97~100이면 'A++', 93~96이면 'A0', 90~92이면 'A-'
+		 * 87~89이면 'B++', 83~86이면 'B0', 80~82이면 'B-'
+		 * 77~79이면 'C++', 73~76이면 'C0', 70~72이면 'C-'
+		 * 67~69이면 'D++', 63~66이면 'D0', 60~62이면 'D-'  
+		 * 60미만이면 'F'
+		 */
+		if(point >= 97) result = "A++";
+		else if(point >= 93) result = "A0"; 
+		else if(point >= 90) result = "A-"; 
+		else if(point >= 87) result = "B++"; 
+		else if(point >= 83) result = "B0"; 
+		else if(point >= 80) result = "B-"; 
+		else if(point >= 77) result = "C++"; 
+		else if(point >= 73) result = "C0"; 
+		else if(point >= 70) result = "C-";
+		else if(point >= 67) result = "D++"; 
+		else if(point >= 63) result = "D0"; 
+		else if(point >= 60) result = "D-"; 
+		else result = "F";
+		
+		System.out.println("당신의 학점은 " + result + "등급 입니다.");
+		
+		scan.close();
+	}
+
+}

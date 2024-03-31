@@ -1,0 +1,23 @@
+package org.kh.site2;
+// 대입 연산자 : 연산 후에 대입하는 연산자 +=, -=, /=, %=, &=, |=
+public class Operation7 {
+
+	public static void main(String[] args) {
+
+		int a = 20;
+		int b = 15;
+		int tmp;
+		a += b;	// a = 35, b = 15
+		b -= a;	// a = 35, b = -20
+		
+		// a와 b의 값 바꾸기
+		System.out.println(a);
+		System.out.println(b);
+		tmp = a;
+		a = b;
+		b = tmp;
+		System.out.println(a);
+		System.out.println(b);
+	}
+
+}

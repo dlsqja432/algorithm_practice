@@ -1,0 +1,13 @@
+package array;
+
+import java.util.ArrayList;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> intArr = new ArrayList<Integer>();
+		intArr.add(43);
+		System.out.println(intArr.get(0));
+	}
+}

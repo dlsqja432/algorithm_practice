@@ -1,0 +1,44 @@
+package org.kh.site2;
+// 대입 연산자 : 연산 후에 대입하는 연산자 +=, -=, /=, %=, &=, |=
+// 비트 연산자 : &, |, ^(xor), ~(complement), >>(right shift), <<(left shift)
+public class Operation7 {
+
+	public static void main(String[] args) {
+
+		int a = 20;
+		int b = 15;
+		int tmp;
+		a += b;	// a = 35, b = 15
+		b -= a;	// a = 35, b = -20
+		
+		// a와 b의 값 바꾸기
+		tmp = a;
+		a = b;
+		b = tmp;
+		System.out.println("a, b : " + a+ "," + b);
+		
+		int x = 0b01101;
+		int y = 0b01011;
+		System.out.println("x = " + Integer.toBinaryString(x));
+		System.out.println("y = " + Integer.toBinaryString(y));
+		System.out.println("x | y = " + Integer.toBinaryString(x | y));
+		System.out.println("x & y = " + Integer.toBinaryString(x & y));
+		System.out.println("x ^ y = " + Integer.toBinaryString(x ^ y));
+		System.out.println("~x = " + Integer.toBinaryString(~x));
+		System.out.println("x >> 2 : " + Integer.toBinaryString(x >> 2));
+		System.out.println("x << 2 : " + Integer.toBinaryString(x << 2));
+		
+		int i = 25; // 11001
+		int j = 30; // 11110
+		i &= j;		// 11000
+		System.out.println("i &= j : " + i);
+		i = 25;
+		i |= j;
+		System.out.println("i |= j : " + i);
+		i = 25;
+		i ^= j;
+		System.out.println("i ^= j : " + i);
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package basic_code_tip;
+// 백준 2587번 : 대표값2
+public class Ex07 {
+
+	public static void main(String[] args) {
+
+	}
+}

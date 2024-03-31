@@ -1,0 +1,18 @@
+package org.kh.java;
+
+public class Variable5 {
+
+	public static void main(String[] args) {
+
+		char ch1 = 'H';
+		char ch2 = 65;
+		char ch3 = 95;
+		
+		System.out.println(ch1);
+		System.out.println(ch2);
+		System.out.println(ch3);
+		
+		System.out.println((int)ch1);
+	}
+
+}

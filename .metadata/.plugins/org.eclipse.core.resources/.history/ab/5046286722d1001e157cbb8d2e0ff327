@@ -1,0 +1,16 @@
+package org.kh.app2;
+// 반복문 : for, while, do~while~
+public class Loop1 {
+
+	public static void main(String[] args) {
+
+		int n = 0;
+		
+		for(int i=0; i<100; i++) {
+			n += 1;
+		}
+		
+		System.out.println(n);
+	}
+
+}
