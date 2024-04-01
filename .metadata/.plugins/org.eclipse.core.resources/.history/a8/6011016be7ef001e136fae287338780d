@@ -1,0 +1,26 @@
+package array;
+
+import java.util.Scanner;
+
+// 백준 11328번 : Strfry
+public class Ex07 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		for(int i=0; i<n; i++) {
+			String s1 = sc.next();
+			String s2 = sc.next();
+			int cnt = 0;
+			for(int j=0; j<s1.length(); j++) {
+				System.out.println(String.valueOf(s2.charAt(j)));
+				if(!s1.contains(String.valueOf(s1.charAt(j)))) {
+					System.out.println("Impossible");
+					break;
+				}
+				cnt++;
+			}
+			if(cnt == s1.length()) System.out.println("Possible");
+		}
+	}
+}

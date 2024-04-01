@@ -1,0 +1,29 @@
+package basic_code_tip;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
+// 백준 10093번 : 숫자
+public class Ex09 {
+
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in);
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a>b) {
+			int tmp = a;
+			a = b;
+			b = tmp;
+		}
+		
+		int cnt = b - a -1;
+		bw.write(cnt);
+		while(a != b-1) {
+			bw.write(++a + " ");
+		}
+		bw.flush();
+	}
+}

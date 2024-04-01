@@ -1,0 +1,24 @@
+package basic_code_tip;
+
+import java.util.Scanner;
+
+// 백준 10093번 : 숫자
+public class Ex09 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if(a>b) {
+			int tmp = a;
+			a = b;
+			b = tmp;
+		}
+		
+		int cnt = b - a + 1;
+		
+		while(a != b-1) {
+			System.out.print(++a + " ");
+		}
+	}
+}
