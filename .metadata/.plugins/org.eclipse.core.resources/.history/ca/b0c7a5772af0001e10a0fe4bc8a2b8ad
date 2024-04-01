@@ -1,0 +1,53 @@
+package linkedlist;
+
+class ArrLength {
+	int[] arr;
+	int length;
+	
+	public ArrLength(int[] arr, int length) {
+		this.arr = arr;
+		this.length = length;
+	}
+}
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public static ArrLength insert(int idx, int num, int arr[], int len) {
+		for(int i=len-1; i>=idx; i--) {
+			arr[i+1] = arr[i];
+		}
+		arr[idx] = num;
+		len++;
+		ArrLength al = new ArrLength(arr, len);
+		return al;
+	}
+	
+	public static ArrLength erase(int idx, int arr[], int len) {
+		for(int i=idx+1; i<len; i++) {
+			arr[i-1] = arr[i]; 
+		}
+		len--;
+		ArrLength al = new ArrLength(arr, len);
+		return al;
+	}
+	
+	public static void insert_test() {
+		System.out.println("***** insert_test *****");
+		int[] arr = new int[10];
+		arr[0] = 10;
+		arr[1] = 20;
+		arr[2] = 30;
+		int len = 3;
+		ArrLength al = insert(3, 40, arr, len);	// 10 20 30 40
+		for(int i : al.arr) System.out.print(i + " ");
+		System.out.println(len);
+	}
+	
+	public static void erase_test(int[] arr) {
+		
+	}
+}
