@@ -15,13 +15,11 @@ public class Ex02 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int n = Integer.parseInt(br.readLine());
-		LinkedList<Character> list;
-		ListIterator<Character> iter;
+		LinkedList<Character> list = new LinkedList<Character>();
+		ListIterator<Character> iter = list.listIterator();
 		
 		for(int i=0; i<n; i++) {
 			String s = br.readLine();
-			list = new LinkedList<Character>();
-			iter = list.listIterator();
 			
 			for(int j=0; j<s.length(); j++) {
 				char c = s.charAt(j);
@@ -42,9 +40,6 @@ public class Ex02 {
 					iter.add(c);
 				}
 			}
-			for(char c : list) bw.write(c);
-			bw.newLine();
 		}
-		bw.flush();
 	}
 }
