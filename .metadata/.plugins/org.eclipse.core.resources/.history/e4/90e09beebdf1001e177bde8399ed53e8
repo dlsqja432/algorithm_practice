@@ -42,12 +42,6 @@ public class Ex03 {
             stack.push(i);
 		}
 		
-		for(int i=1; i<=n; i++) {
-			sb.append(result[i] + " ");
-		}
-		bw.write(sb.toString());
-		bw.flush();
-		bw.close();
-			
+		System.out.println(sb.toString());
 	}
 }

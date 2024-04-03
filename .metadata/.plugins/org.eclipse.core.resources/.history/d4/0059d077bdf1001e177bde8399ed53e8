@@ -34,7 +34,7 @@ public class Ex03 {
             }
             // 스택이 비어있지 않으면 수신하는 탑의 번호는 스택의 가장 위에 있는 탑의 번호
             if (!stack.isEmpty()) {
-                result[i] = stack.peek();
+                result[i] = stack.peek() + 1;
             } else { // 스택이 비어있으면 수신하는 탑이 없음
                 result[i] = 0;
             }
@@ -42,12 +42,6 @@ public class Ex03 {
             stack.push(i);
 		}
 		
-		for(int i=1; i<=n; i++) {
-			sb.append(result[i] + " ");
-		}
-		bw.write(sb.toString());
-		bw.flush();
-		bw.close();
-			
+		System.out.println(sb.toString());
 	}
 }

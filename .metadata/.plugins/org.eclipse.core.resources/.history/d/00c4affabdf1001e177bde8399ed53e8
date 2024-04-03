@@ -43,11 +43,8 @@ public class Ex03 {
 		}
 		
 		for(int i=1; i<=n; i++) {
-			sb.append(result[i] + " ");
+			sb.append(i + " ");
 		}
-		bw.write(sb.toString());
-		bw.flush();
-		bw.close();
 			
 	}
 }

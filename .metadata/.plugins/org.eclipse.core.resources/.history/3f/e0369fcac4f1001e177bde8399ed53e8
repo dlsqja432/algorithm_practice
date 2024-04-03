@@ -1,0 +1,8 @@
+package stack;
+// 백준 6198번 : 옥상 정원 꾸미기
+public class Ex04 {
+
+	public static void main(String[] args) {
+
+	}
+}
