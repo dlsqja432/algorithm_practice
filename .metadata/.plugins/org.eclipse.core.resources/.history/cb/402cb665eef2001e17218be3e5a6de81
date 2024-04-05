@@ -14,18 +14,17 @@ public class Ex04 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int n = Integer.parseInt(br.readLine());
+		int[] arr = new int[n+1];
 		Stack<Integer> stack = new Stack<>();
 		
-		long result = 0;
-		for(int i=0; i<n; i++) {
-			int height = Integer.parseInt(br.readLine());
-			while(!stack.isEmpty() && stack.peek()<=height) {
-				stack.pop();
-			}
-			result += stack.size();
-			stack.push(height);
+		for(int i=1; i<=n; i++) {
+			arr[i] = Integer.parseInt(br.readLine());
 		}
-		bw.write(String.valueOf(result));
-		bw.flush();
+		
+		int count = 0;
+		for(int i=n; i>=1; i--) {
+			count = 0;
+			while(!stack.isEmpty() && )
+		}
 	}
 }

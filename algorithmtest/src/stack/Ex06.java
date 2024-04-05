@@ -7,25 +7,31 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Stack;
 
-// 백준 6198번 : 옥상 정원 꾸미기
-public class Ex04 {
+// 백준 3015번 오아시스 재결합
+public class Ex06 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int n = Integer.parseInt(br.readLine());
-		Stack<Integer> stack = new Stack<>();
+		int[] arr = new int[n];
+		Stack<Integer> stack= new Stack<>();
 		
-		long result = 0;
 		for(int i=0; i<n; i++) {
-			int height = Integer.parseInt(br.readLine());
-			while(!stack.isEmpty() && stack.peek()<=height) {
+			arr[i] = Integer.parseInt(br.readLine());
+		}
+		
+		int result = 0;
+		for(int i=0; i<n-1; i++) {
+			stack.push(arr[i]);
+			
+			result += stack.size();
+			
+			while(!stack.isEmpty() && stack.peek() < arr[i+1]) {
 				stack.pop();
 			}
-			result += stack.size();
-			stack.push(height);
 		}
-		bw.write(String.valueOf(result));
-		bw.flush();
+		
+		System.out.println(result);
 	}
 }

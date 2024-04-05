@@ -19,7 +19,7 @@ public class Ex04 {
 		long result = 0;
 		for(int i=0; i<n; i++) {
 			int height = Integer.parseInt(br.readLine());
-			while(!stack.isEmpty() && stack.peek()<=height) {
+			while(!stack.isEmpty() && stack.peek()<height) {
 				stack.pop();
 			}
 			result += stack.size();
