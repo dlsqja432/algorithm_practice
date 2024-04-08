@@ -1,8 +1,0 @@
-package array;
-// 백준 10808번 : 알파벳 개수
-public class Ex01 {
-
-	public static void main(String[] args) {
-		
-	}
-}
