@@ -1,0 +1,20 @@
+package bfs;
+//백준 2178번 미로 탐색
+
+class Pair {
+	int x;
+	int y;
+
+	public Pair(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+}
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		
+	}	
+}

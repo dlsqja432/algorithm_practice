@@ -1,0 +1,51 @@
+package bfs;
+//백준 2178번 미로 탐색
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+class Pair2 {
+	int x;
+	int y;
+	int len;
+	
+	public Pair2(int x, int y, int len) {
+		this.x = x;
+		this.y = y;
+		this.len = len;
+	}
+}
+
+public class Ex02 {
+	
+	static int[][] maze = new int[101][101];
+	static boolean[][] vis = new boolean[101][101];
+	static int[] dx = {1, 0, -1, 0};
+	static int[] dy = {0, 1, 0, -1};
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int n = Integer.parseInt(st.nextToken());
+		int m = Integer.parseInt(st.nextToken());
+		
+		for(int i=0; i<n; i++) {
+			String s = br.readLine();
+			for(int j=0; j<m; j++) {
+				maze[i][j] = Integer.parseInt(String.valueOf(s.charAt(j)));
+			}
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
