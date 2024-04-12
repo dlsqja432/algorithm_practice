@@ -44,7 +44,7 @@ public class Ex07 {
 							int nx = cur.x + dx[dir];
 							int ny = cur.y + dy[dir];
 							if(nx<0 || nx>=n || ny<0 || ny>=n) continue;
-							if(avis[nx][ny] && board[nx][ny]!=board[cur.x][cur.y]) continue;
+							if(avis[nx][ny] || board[nx][ny]!=board[cur.x][cur.y]) continue;
 							avis[nx][ny] = true;
 							q.add(new Pair(nx,ny));
 						}
@@ -52,11 +52,11 @@ public class Ex07 {
 				}
 			}
 		}
-		
+		q.clear();
 		// 적록색약 bfs
 		for(int i=0; i<n; i++) {
 			for(int j=0; j<n; j++) {
-				if(board[i][j] == 'R' || board[i][j] == 'G' && bvis[i][j] == false) {
+				if((board[i][j] == 'R' || board[i][j] == 'G') && bvis[i][j] == false) {
 					q.add(new Pair(i,j));
 					bvis[i][j] = true;
 					bsum++;
@@ -66,13 +66,12 @@ public class Ex07 {
 							int nx = cur.x + dx[dir];
 							int ny = cur.y + dy[dir];
 							if(nx<0 || nx>=n || ny<0 || ny>=n) continue;
-							if(bvis[nx][ny] && board[nx][ny]!='R' || board[nx][ny]!='G') continue;
+							if(bvis[nx][ny] || board[nx][ny]=='B') continue;
 							bvis[nx][ny] = true;
 							q.add(new Pair(nx,ny));
 						}
 					}
 				}
-				
 				if(board[i][j] == 'B' && bvis[i][j] == false) {
 					q.add(new Pair(i,j));
 					bvis[i][j] = true;
@@ -83,7 +82,7 @@ public class Ex07 {
 							int nx = cur.x + dx[dir];
 							int ny = cur.y + dy[dir];
 							if(nx<0 || nx>=n || ny<0 || ny>=n) continue;
-							if(bvis[nx][ny] && board[nx][ny]!='B') continue;
+							if(bvis[nx][ny] || board[nx][ny]!='B') continue;
 							bvis[nx][ny] = true;
 							q.add(new Pair(nx,ny));
 						}
@@ -91,7 +90,6 @@ public class Ex07 {
 				}
 			}
 		}
-		
 		System.out.println(asum + " " + bsum);
 	}
 }

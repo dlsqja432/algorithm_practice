@@ -1,0 +1,28 @@
+package bfs;
+//백준 7569번 토마토
+
+class Triple {
+	int x;
+	int y;
+	int z;
+	
+	public Triple(int x, int y, int z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
+}
+
+public class Ex08 {
+
+	static int n,m,h;
+	static int[][][] board;
+	static boolean[][][] vis;
+	static int[] dx = {1, 0, -1, 0, 0, 0};
+	static int[] dy = {0, 1, 0, -1, 0, 0};
+	static int[] dz = {0, 0, 0, 0, 1, -1};
+	
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,8 @@
+package bfs;
+//백준 7569번 토마토
+public class Ex08 {
+
+	public static void main(String[] args) {
+
+	}
+}

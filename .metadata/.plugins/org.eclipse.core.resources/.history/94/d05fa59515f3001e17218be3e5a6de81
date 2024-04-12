@@ -1,8 +1,0 @@
-package stack;
-// 백준 3015번 오아시스 재결합
-public class Ex06 {
-
-	public static void main(String[] args) {
-
-	}
-}
