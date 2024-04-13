@@ -3,6 +3,8 @@ package bfs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
@@ -34,9 +36,45 @@ public class Ex11 {
 			int y2 = Integer.parseInt(st.nextToken());
 			for(int j=0; j<y2-y1; j++) {
 				for(int t=0; t<x2-x1; t++) {
-					board[][]
+					board[n-y1-j-1][x1+t] = 1;
 				}
-			} 
+			}
+		}
+		
+		ArrayList<Integer> areaList = new ArrayList<>();
+		int count = 0;
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<m; j++) {
+				if(board[i][j]==0 && vis[i][j]==false) {
+					int area = 0;
+					count++;
+					q.add(new Pair(i,j));
+					vis[i][j] = true;
+					while(!q.isEmpty()) {
+						Pair cur = q.poll();
+						area++;
+						for(int dir=0; dir<4; dir++) {
+							int nx = cur.x + dx[dir];
+							int ny = cur.y + dy[dir];
+							if(nx<0 || nx>=n || ny<0 || ny>=m) continue;
+							if(vis[nx][ny] || board[nx][ny]==1) continue;
+							vis[nx][ny] = true;
+							q.add(new Pair(nx,ny));
+						}
+					}
+					areaList.add(area);
+				}
+			}
+		}
+		
+		int[] arr = new int[count];
+		for(int i=0; i<count; i++) {
+			arr[i] = areaList.get(i);
+		}
+		Arrays.sort(arr);
+		System.out.println(count);
+		for(int i : arr) {
+			System.out.print(i + " ");
 		}
 	}
 }
