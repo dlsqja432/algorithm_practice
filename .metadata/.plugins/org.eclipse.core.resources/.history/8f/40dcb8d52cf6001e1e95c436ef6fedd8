@@ -1,8 +1,0 @@
-package stack_util;
-//백준 10799번 쇠막대기
-public class Ex04 {
-
-	public static void main(String[] args) {
-
-	}
-}

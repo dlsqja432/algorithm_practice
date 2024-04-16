@@ -10,13 +10,12 @@ import java.util.StringTokenizer;
 //백준 2573번 빙산
 public class Ex18 {
 
-	static int n,m,year;
-	static int[][] board;
-	static int[][] next_board;
+	static int n,m;
+	static int[][][] board;
 	static boolean[][] vis;
 	static int[] dx = {1, 0, -1, 0};
 	static int[] dy = {0, 1, 0, -1};
-	static Queue<Pair> q = new LinkedList<>();
+	static Queue<Triple> q = new LinkedList<>();
 	static int area = 0, count = 0;
 	
 	public static void main(String[] args) throws IOException {
@@ -25,20 +24,34 @@ public class Ex18 {
 		int n = Integer.parseInt(st.nextToken());
 		int m = Integer.parseInt(st.nextToken());
 		
-		board = new int[n][m];
+		board = new int[n][m][2];
 		vis = new boolean[n][m];
 		
 		for(int i=0; i<n; i++) {
 			st = new StringTokenizer(br.readLine());
 			for(int j=0; j<m; j++) {
-				board[i][j] = Integer.parseInt(st.nextToken());
-				next_board[i][j] = Integer.parseInt(st.nextToken());
+				board[i][j][0] = Integer.parseInt(st.nextToken());
 			}
 		}
 		
-		for(int i=0; i<n; i++) {
-			for(int j=0; j<m; j++) {
-				
+		while(area >= 2) {
+			area = 0;
+			for(int i=0; i<n; i++) {
+				for(int j=0; j<m; j++) {
+					if(board[i][j][0]==0 && vis[i][j]==false) {
+						vis[i][j] = true;
+						q.add(new Triple(i,j,0));
+						while(!q.isEmpty()) {
+							Triple cur = q.peek();
+							for(int dir=0; dir<4; dir++) {
+								int nx = cur.x + dx[dir];
+								int ny = cur.y + dy[dir];
+								if(nx<0 || nx>=n || ny<0 || ny>=m) continue;
+								if((board[nx][ny][0]==0 && board[nx]))
+							}
+						}
+					}
+				}
 			}
 		}
 	}

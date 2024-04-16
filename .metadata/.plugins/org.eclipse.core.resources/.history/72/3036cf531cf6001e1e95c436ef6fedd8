@@ -1,8 +1,0 @@
-package stack_util;
-// 백준 3986번 좋은 단어
-public class Ex02 {
-
-	public static void main(String[] args) {
-		
-	}
-}
