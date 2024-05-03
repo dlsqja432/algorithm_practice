@@ -1,8 +1,0 @@
-package bfs;
-//백준 7562번 나이트의 이동
-public class Ex09 {
-
-	public static void main(String[] args) {
-		
-	}
-}

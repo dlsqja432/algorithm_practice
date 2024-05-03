@@ -1,0 +1,8 @@
+package recursion;
+//백준 1992번: 쿼드트리
+public class Ex07 {
+
+	public static void main(String[] args) {
+		
+	}
+}

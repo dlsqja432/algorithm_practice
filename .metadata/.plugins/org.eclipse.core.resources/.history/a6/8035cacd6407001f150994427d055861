@@ -1,0 +1,19 @@
+package recursion;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+//백준 1629번 곱셈
+public class Ex01 {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+	}
+	
+	void func1(int n) {
+		if(n==0) return;
+		System.out.println(n + " ");
+		func1(n-1);
+	}
+}

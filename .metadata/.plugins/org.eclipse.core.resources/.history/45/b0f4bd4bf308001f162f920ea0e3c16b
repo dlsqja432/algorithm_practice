@@ -1,0 +1,8 @@
+package recursion;
+//백준 1780번: 종이의 개수
+public class Ex05 {
+
+	public static void main(String[] args) {
+		
+	}
+}

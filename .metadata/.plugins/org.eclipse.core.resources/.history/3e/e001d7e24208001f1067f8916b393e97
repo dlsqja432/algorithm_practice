@@ -1,0 +1,40 @@
+package recursion;
+
+import java.util.Scanner;
+
+//백준 17478번 : 재귀함수가 뭔가요?
+public class Ex04 {
+	
+	static String rec = "____";
+	
+
+	public static void main(String[] args) {
+		//1. 함수의 정의
+		//void func(int n)
+		
+		//2. base condition
+		//if(n==0) return;
+		
+		//3. 재귀 식
+		//func(n-1)
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		sc.close();
+		
+		func(n,0);
+	}
+	
+	static void func(int n, int depth) {
+		//재귀 호출의 깊이에 따라 들여쓰기를 추가하여 출력
+		String prefix="";
+		for(int i=0; i<depth; i++) {
+			prefix += "____";
+		}
+		
+		//기본 출력
+		System.out.println(prefix + "\"재귀함수가 뭔가요?\"");
+		System.out.println(prefix + "\"잘 들어보게. 옛날옛날 한 산 꼭대기에 이세상 모든 지식을 통달한 선인이 있었어.\"");
+		System.out.println(prefix + "마을 사람들은 모두 그 선인에게 수많은 질문을 했고, 모두 지혜롭게 대답해 주었지.");
+	}
+}

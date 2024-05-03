@@ -1,0 +1,24 @@
+package recursion;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+//백준 1629번 곱셈
+public class Ex01 {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int c = Integer.parseInt(st.nextToken());
+		System.out.println(func1(a,b,c));
+	}
+	
+	static int func1(int a, int b, int c) {
+		if(b==0) return 1;
+		return (a*func1(a,b-1,c))%c;
+	}
+}

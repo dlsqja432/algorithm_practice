@@ -1,8 +1,0 @@
-package bfs;
-//백준 2667번 단지번호 붙이기
-public class Ex12 {
-
-	public static void main(String[] args) {
-
-	}
-}

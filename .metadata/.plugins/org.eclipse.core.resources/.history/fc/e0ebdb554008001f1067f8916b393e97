@@ -1,0 +1,8 @@
+package recursion;
+//백준 17478번 : 재귀함수가 뭔가요?
+public class Ex04 {
+
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,8 @@
+package recursion;
+//백준2447번: 별 찍기 - 10
+public class Ex08 {
+
+	public static void main(String[] args) {
+		
+	}
+}

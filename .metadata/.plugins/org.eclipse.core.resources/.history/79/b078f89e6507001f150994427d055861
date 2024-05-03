@@ -1,0 +1,27 @@
+package recursion;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+//백준 1629번 곱셈
+public class Ex01 {
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(br.readLine());
+		func1(n);
+		System.out.println(func2(n));
+	}
+	
+	static void func1(int n) {
+		if(n==0) return;
+		System.out.print(n + " ");
+		func1(n-1);
+	}
+	
+	static int func2(int n) {
+		if(n==0) return 0;
+		return n+func2(n-1);
+	}
+}
